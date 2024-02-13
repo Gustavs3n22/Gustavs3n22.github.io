@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Tektur', sans-serif;
+    src: url('/Tektur-VariableFont_wdth,wght.ttf')  format('truetype');
+}
+
+
 a{
     font-size: xx-large;
     text-decoration: none;

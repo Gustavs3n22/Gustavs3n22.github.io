@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Tektur', sans-serif;
+    src: url('/Tektur-VariableFont_wdth,wght.ttf')  format('truetype');
+}
+
 *{
     margin: 0;
     font-family: 'Tektur', sans-serif;
