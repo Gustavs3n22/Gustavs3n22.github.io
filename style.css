@@ -1,0 +1,33 @@
+a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: green;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+*{
+    margin: 0;
+    font-family: 'Tektur', sans-serif;
+    overflow: hidden;
+}
+
+.redirectMe{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.extraWrap{
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+img{
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    height: 110%;
+    z-index: -100;
+}
