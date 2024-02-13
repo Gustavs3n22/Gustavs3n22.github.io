@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    font-family: 'Tektur', sans-serif;
+    overflow: hidden;
+}
+
+.navLine{
+    height: 100px;
+    width: 100%;
+    height: 170px;
+    background-color:#ffffff;
+    display: grid;
+    color: rgb(43, 43, 43);
+}
+
+.navLine img{
+    height: 30px;
+    margin-left: 10px;
+}
+
+body{
+    background-color:#ffffff;
+}
+
+.topLine{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 80px;
+}
+
+.topLine h1{
+    font-weight: bolder;
+    font-weight: 900;
+    color: green;
+}
+
+.mainTable{
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    background-color: #ffa500;
+    color: rgb(43, 43, 43);
+}
+
+.mainTable th{
+    height: 50px;
+    width: 110px;
+}
+
+.botLine{
+    font-size:large;
+    height: 100px;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    border-top: 2px solid rgb(157, 157, 157);
+}
+
+.botLine a{
+    margin: auto;
+}
+
+.dates{
+    font-size: x-large;
+    width: fit-content;
+    margin: auto;
+}
+
+.newsPlaceholder{
+    height: 200px;
+    width: 600px;
+    background-color: green;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.newsText{
+    padding-top: 8%;
+    height: fit-content;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.photoPlaceholder{
+    position: absolute;
+    height: 150px;
+    top: 3%;
+    right: 4%;
+    transition: ease-out 0.5s;
+}
+
+.photoPlaceholder:hover{
+    transform:scale(1.2)
+}
+
+input{
+    border: 0;
+    background-color: #004b0a;
+    border-bottom: rgb(0, 180, 72) 1px solid;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    color: white;
+}
+
+.submitButton{
+    color: black;
+    background-color: white;
+    border-bottom: 0;
+}
+
+.longTerm{
+    text-decoration: none;
+    color: black;
+    transition: ease-out 0.5s;
+}
+
+.longTerm:hover{
+    transform: scale(1.2);
+}
+
+.temporary{
+    text-decoration: none;
+    border-bottom: 1px red solid;
+    color: red;
+}

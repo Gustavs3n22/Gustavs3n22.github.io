@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Временные возможности</title>
+    <link rel="stylesheet" href="smoother.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@900&display=swap" rel="stylesheet">
+</head>
+<header>
+        <a href="../MentalEmergencyWebsite/authorpage.html"><img class="photoPlaceholder" src="JokeSova.png" alt="JokeSova"></a>
+    <div class="navLine">
+        <div class="topLine">
+            <h1>
+                ВРЕМЕННЫЕ ВОЗМОЖНОСТИ 
+                <img src="vkusno-i-tochka-256x201.png" alt="vkusno-i-tochka-256x201">
+                ВКУСНО - И ТОЧКА
+            </h1>
+        </div>
+        <div class="botLine">
+            <a class="temporary">Временные</a>
+            <a class="longTerm" href="C:\Users\zinov\OneDrive\Рабочий стол\TochkaShifts\sendConstantCapabilities.html">Постоянные</a>
+        </div>
+    </div>
+</header>
+<body>
+
+    <div class="bodywrap">
+        <div class="timeCapabilities">
+            <div class="dates">
+                <p id="output"></p>
+            </div>
+            <table class="mainTable">
+                <tr>
+                    <th></th>
+                    <th>понедельник</th>
+                    <th>вторник</th>
+                    <th>среда</th>
+                    <th>четверг</th>
+                    <th>пятница</th>
+                    <th>суббота</th>
+                    <th>воскресенье</th>
+                    <th>номер сотрудника</th>
+                </tr>
+                <tr>
+                    <th>например</th>
+                    <th><input readonly type="text" value="13:00 - 17:00"></th>
+                    <th><input readonly type="text" value="18:45-0:00"></th>
+                    <th><input readonly type="text" value="6:00-13:30"></th>
+                    <th><input readonly type="text" value="полное время "></th>
+                    <th><input readonly type="text" value="любое"></th>
+                    <th><input readonly type="text" value="-"></th>
+                    <th><input readonly type="text" value="выходной"></th>
+                    <th><input readonly type="number" value="21"></th>
+                </tr>
+                <form method="post" action="file:///C:/Users/zinov/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/TochkaShifts/sendCapabilities.html">
+                    <tr>
+                        <th>вы</th>
+                        <th><input maxlength="50" type="text" name="monday"></th>
+                        <th><input maxlength="50" type="text" name="tuesday"></th>
+                        <th><input maxlength="50" type="text" name="wednesday"></th>
+                        <th><input maxlength="50" type="text" name="thursday"></th>
+                        <th><input maxlength="50" type="text" name="friday"></th>
+                        <th><input maxlength="50" type="text" name="saturday"></th>
+                        <th><input maxlength="50" type="text" name="sunday"></th>
+                        <th><input type="number" name="employeeNumber"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="9"><input type="submit"></th>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div class="newsPlaceholder">
+            <div class="newsText">
+                ЗДЕСЬ <br> МОГЛИ БЫ <br> БЫТЬ <br> ЕЖЕНЕДЕЛЬНЫЕ <br> НОВОСТИ
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    var d = new Date();
+    d.setUTCDate(d.getUTCDate() + (7 - d.getUTCDay()) % 7 + 1);
+    var resultDate = eval("'С ' + String(d.getDate()) + '.' + String(d.getMonth()+1) + '.' + String(d.getFullYear())")
+    document.getElementById("output").innerHTML = resultDate;
+    d.setUTCDate(d.getUTCDate() + (6 - d.getUTCDay()) % 7 + 1);
+    resultDate += eval("' по ' + String(d.getDate()) + '.' + String(d.getMonth()+1) + '.' + String(d.getFullYear())")
+    document.getElementById("output").innerHTML = resultDate;
+    </script>
+
+</body>
+</html>
